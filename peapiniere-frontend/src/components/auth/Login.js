@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await login(email, password);
-      navigate('/dashboard'); // Redirect to dashboard after login
+      navigate('/admin'); // Redirect to dashboard after login
     } catch (err) {
       setError('Invalid credentials');
     }
